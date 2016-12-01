@@ -1,0 +1,1 @@
+function hsadm101(userid, htmlId) { $(htmlId).html("<h1>hsadm101s Widget</h1>"); } 

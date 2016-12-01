@@ -1,0 +1,57 @@
+
+{
+	"baseHtml": [
+		"<div id='courseDescr_chooser'>",
+				  "<h4><font color='#4A97CF'> Lecture Crawl - what class is on? </font></h4>",
+				  "<label>Subject of Interest: </label> <br>",
+				  "<input type='checkbox' id='courseBS_subject'> Biological Sciences <br>",
+				  "<input type='checkbox' id='courseBC_subject'> Business & Communication <br>",
+				  "<input type='checkbox' id='courseCS_subject'> Computer Science <br>",
+				  "<input type='checkbox' id='courseEG_subject'> English <br>",
+				  "<input type='checkbox' id='courseFA_subject'> Fine Arts <br>",
+				  "<input type='checkbox' id='courseHM_subject'> Humanities <br>",
+				  "<input type='checkbox' id='courseLG_subject'> Languages <br>",
+				  "<input type='checkbox' id='courseMA_subject'> Mathematics <br>",
+				  "<input type='checkbox' id='coursePS_subject'> Physical Sciences <br>",
+				  "<input type='checkbox' id='courseSS_subject'> Social Sciences <br>",
+				  "<br>",
+				  "<label>At what time today: </label> <br>",
+				  "<input type='radio' id = 'The_Now' name='Want_Time' value='Time_current' checked> NOW",
+				  "<input type='radio' id = 'The_Choose' name='Want_Time' value='Time_choose'> Choose:",
+				  "<select disabled id = 'hour'>",
+						"<option value='8'>08",
+						"<option value='9'>09",
+						"<option value='10'>10",
+						"<option value='11'>11",
+						"<option value='12'>12",
+						"<option value='13'>13",
+						"<option value='14'>14",
+						"<option value='15'>15",
+						"<option value='16'>16",
+						"<option value='17'>17",
+						"<option value='18'>18",
+						"<option value='19'>19",
+						"<option value='20'>20",
+				"</select>",
+				":",
+				"<select disabled id = 'minute'>",
+					"<option value='00'>00",
+					"<option value='30'>30",
+				"</select>",	
+			"<button id='Get_Lecture'>Get!</button>",
+		"</div>",
+		"<div id='course_of_Interest'></div>"
+	],
+
+	"courseD": [
+		"<h4>Lectures in Progress:</h4>",
+               "<ul>{{#valid_courses}}",
+                 "<li>",
+                   "<p><strong><a href='http://www.ucalendar.uwaterloo.ca/1415/COURSE/course-{{subject}}.html#{{subject}}{{catalog_number}}' target='_blank'>{{subject}} {{catalog_number}}</a> {{title}} {{#classes}}{{date.start_time}} - {{date.end_time}} {{location.building}}-{{location.room}} {{/classes}}</strong> </p>",
+                 "</li>",
+               "{{/valid_courses}}</ul>"
+	],
+
+	"error": "<p>Course not found.</p>"
+
+}

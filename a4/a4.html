@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    		<meta charset="utf-8"/>
+        <title>CS349 Portal</title>
+		
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="css/bootstrap.css">
+        <link rel="stylesheet" media="screen" href="css/bootstrap-theme.css">
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="js/mustache.js" type="text/javascript"></script>
+        <script src="js/portal.js" type="text/javascript"></script>
+        
+        
+        <link rel="stylesheet" media="screen" href="css/main.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body><div class="container-fluid">
+        
+  <div class="row">
+  	<h1>CS349 Portal</h1>
+  	<div class="pull-left">Byron Weber Becker</div>  <div class="pull-right"><a href="/admin">Admin</a></div>
+  </div>
+    
+  
+
+	 
+	   <div class="row">
+		    	<div class="col-md-4 cell" id="hsadm101_background">
+		        <link rel="stylesheet" 
+		        			media="screen" 
+		        			href="widgets/hsadm101/hsadm101.css">
+		    		<script src="widgets/hsadm101/hsadm101.js" 
+		    					type="text/javascript"></script>
+		    	  <div id="hsadm101"></div>
+		    	</div>
+	   	 
+	   
+	   	 
+		    	<div class="col-md-4 cell" id="courseDescr_background">
+		        <link rel="stylesheet" 
+		        			media="screen" 
+		        			href="widgets/courseDescr/courseDescr.css">
+		    		<script src="widgets/courseDescr/courseDescr.js" 
+		    					type="text/javascript"></script>
+		    	  <div id="courseDescr"></div>
+		    	</div>
+	   	 
+		    	<div class="col-md-4 cell" id="stdCrsHist_background">
+		        <link rel="stylesheet" 
+		        			media="screen" 
+		        			href="widgets/stdCrsHist/stdCrsHist.css">
+		    		<script src="widgets/stdCrsHist/stdCrsHist.js" 
+		    					type="text/javascript"></script>
+		    	  <div id="stdCrsHist"></div>
+		    	</div>
+	   	 
+    	    	
+    </div>
+    
+    <script>
+    var server = "localhost"
+    $(document).ready(function() {
+    	
+    		courseDescr("x32he", "#courseDescr")
+    	
+    		stdCrsHist("x32he", "#stdCrsHist")
+
+    		hsadm101("x32he", "#hsadm101")
+    	
+    });
+    </script>
+  
+
+
+    </div></body>
+</html>
+

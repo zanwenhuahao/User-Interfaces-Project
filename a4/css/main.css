@@ -1,0 +1,13 @@
+
+body {
+	padding:  0 15px;
+}
+
+.cell {
+  	min-height: 200px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	max-width: 300px;
+	max-height: 600px;
+	overflow: auto;
+}
